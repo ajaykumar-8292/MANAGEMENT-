@@ -1,0 +1,116 @@
+
+        :root {
+            --bg: #f5fbf9;
+            --card: #fff;
+            --accent: #0b66ff;
+            --muted: #6b7280;
+            --danger: #e53935;
+            --radius: 12px;
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: #111;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column
+        }
+
+        .topbar {
+            background: linear-gradient(90deg, #0b66ff 0%, #3b82f6 100%);
+            color: white;
+            padding: 18px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px
+        }
+
+        .topbar input {
+            padding: 8px 10px;
+            border-radius: 8px;
+            border: none;
+            min-width: 200px
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 18px;
+            padding: 22px;
+            flex: 1
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 18px;
+            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06)
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: var(--muted)
+        }
+
+        label input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #e6e9ef;
+            margin-top: 4px
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 8px;
+            justify-content: flex-end;
+            margin-top: 8px
+        }
+
+        button {
+            padding: 10px 14px;
+            border-radius: 10px;
+            border: none;
+            background: var(--accent);
+            color: white;
+            cursor: pointer
+        }
+
+        button.muted {
+            background: #eef2ff;
+            color: #1f2937
+        }
+
+        button.danger {
+            background: var(--danger);
+            color: white
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px
+        }
+
+        th, td {
+            padding: 8px;
+            border-bottom: 1px solid #f1f4f8;
+            text-align: left
+        }
+
+        img.thumb {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+    

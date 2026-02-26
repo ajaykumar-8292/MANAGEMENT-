@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= <header class="topbar">
+        <h1>College Management System</h1>
+        <input id="searchInput" placeholder="Search students..." />
+        <button id="clearAllBtn" class="danger">Clear All</button>
+    </header>
+
+    <main class="container">
+        <!-- FORM -->
+        <section class="card">
+            <h2 id="formTitle">Add Student</h2>
+            <form id="studentForm">
+                <input type="hidden" id="studentId" />
+
+                <label>Name
+                    <input id="name" required />
+                </label>
+
+                <label>Age
+                    <input id="age" type="number" min="1" required />
+                </label>
+
+                <label>Degree
+                    <input id="degree" required />
+                </label>
+
+                <label>Email
+                    <input id="email" type="email" required />
+                </label>
+
+                <label>Photo
+                    <input id="photo" type="file" accept="image/*" />
+                </label>
+                <img id="photoPreview" class="thumb" src="">
+
+                <label>Signature
+                    <input id="sign" type="file" accept="image/*" />
+                </label>
+                <img id="signPreview" class="thumb" src="">
+
+                <div class="form-actions">
+                    <button type="submit">Save</button>
+                    <button type="button" id="resetBtn" class="muted">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- TABLE -->
+        <section class="card">
+            <h2>Students</h2>
+            <table id="studentsTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Degree</th>
+                        <th>Email</th>
+                        <th>Sign</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+<script src="script.js"></script>
+    
+</body>
+</html>
